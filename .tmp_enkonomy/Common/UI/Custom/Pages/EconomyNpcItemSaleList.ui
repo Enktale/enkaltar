@@ -1,0 +1,97 @@
+$C = "../Common.ui";
+
+$C.@PageOverlay {}
+
+$C.@Container {
+  Anchor: (Width: 620, Height: 420);
+
+  #Content {
+    LayoutMode: Top;
+    Padding: (Full: 18);
+
+    Label #TitleText {
+      Style: (
+        FontSize: 18,
+        RenderBold: true,
+        TextColor: #ffffff,
+        HorizontalAlignment: Center
+      );
+      Anchor: (Height: 28);
+      Padding: (Bottom: 8);
+    }
+
+    Label #HelpText {
+      Style: (
+        FontSize: 12,
+        TextColor: #bfcdd5
+      );
+      Padding: (Bottom: 10);
+    }
+
+    Group {
+      LayoutMode: Top;
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 10);
+
+        Group #ItemCard0 { Anchor: (Width: 70, Height: 70); Visible: false;
+          $C.@SecondaryTextButton #ItemButton0 { Text: ""; Anchor: (Width: 70, Height: 70); }
+          ItemGrid #ItemIcon0 { Anchor: (Width: 48, Height: 48, Left: 11, Top: 11); SlotsPerRow: 1; RenderItemQualityBackground: false; AreItemsDraggable: false; InfoDisplay: None; Style: (SlotSize: 48, SlotSpacing: 0, SlotIconSize: 48); }
+        }
+        Label { Anchor: (Width: 10); }
+        Group #ItemCard1 { Anchor: (Width: 70, Height: 70); Visible: false;
+          $C.@SecondaryTextButton #ItemButton1 { Text: ""; Anchor: (Width: 70, Height: 70); }
+          ItemGrid #ItemIcon1 { Anchor: (Width: 48, Height: 48, Left: 11, Top: 11); SlotsPerRow: 1; RenderItemQualityBackground: false; AreItemsDraggable: false; InfoDisplay: None; Style: (SlotSize: 48, SlotSpacing: 0, SlotIconSize: 48); }
+        }
+        Label { Anchor: (Width: 10); }
+        Group #ItemCard2 { Anchor: (Width: 70, Height: 70); Visible: false;
+          $C.@SecondaryTextButton #ItemButton2 { Text: ""; Anchor: (Width: 70, Height: 70); }
+          ItemGrid #ItemIcon2 { Anchor: (Width: 48, Height: 48, Left: 11, Top: 11); SlotsPerRow: 1; RenderItemQualityBackground: false; AreItemsDraggable: false; InfoDisplay: None; Style: (SlotSize: 48, SlotSpacing: 0, SlotIconSize: 48); }
+        }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 10);
+
+        Group #ItemCard3 { Anchor: (Width: 70, Height: 70); Visible: false;
+          $C.@SecondaryTextButton #ItemButton3 { Text: ""; Anchor: (Width: 70, Height: 70); }
+          ItemGrid #ItemIcon3 { Anchor: (Width: 48, Height: 48, Left: 11, Top: 11); SlotsPerRow: 1; RenderItemQualityBackground: false; AreItemsDraggable: false; InfoDisplay: None; Style: (SlotSize: 48, SlotSpacing: 0, SlotIconSize: 48); }
+        }
+        Label { Anchor: (Width: 10); }
+        Group #ItemCard4 { Anchor: (Width: 70, Height: 70); Visible: false;
+          $C.@SecondaryTextButton #ItemButton4 { Text: ""; Anchor: (Width: 70, Height: 70); }
+          ItemGrid #ItemIcon4 { Anchor: (Width: 48, Height: 48, Left: 11, Top: 11); SlotsPerRow: 1; RenderItemQualityBackground: false; AreItemsDraggable: false; InfoDisplay: None; Style: (SlotSize: 48, SlotSpacing: 0, SlotIconSize: 48); }
+        }
+        Label { Anchor: (Width: 10); }
+        Group #ItemCard5 { Anchor: (Width: 70, Height: 70); Visible: false;
+          $C.@SecondaryTextButton #ItemButton5 { Text: ""; Anchor: (Width: 70, Height: 70); }
+          ItemGrid #ItemIcon5 { Anchor: (Width: 48, Height: 48, Left: 11, Top: 11); SlotsPerRow: 1; RenderItemQualityBackground: false; AreItemsDraggable: false; InfoDisplay: None; Style: (SlotSize: 48, SlotSpacing: 0, SlotIconSize: 48); }
+        }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 10);
+
+        Group #ItemCard6 { Anchor: (Width: 70, Height: 70); Visible: false;
+          $C.@SecondaryTextButton #ItemButton6 { Text: ""; Anchor: (Width: 70, Height: 70); }
+          ItemGrid #ItemIcon6 { Anchor: (Width: 48, Height: 48, Left: 11, Top: 11); SlotsPerRow: 1; RenderItemQualityBackground: false; AreItemsDraggable: false; InfoDisplay: None; Style: (SlotSize: 48, SlotSpacing: 0, SlotIconSize: 48); }
+        }
+        Label { Anchor: (Width: 10); }
+        Group #ItemCard7 { Anchor: (Width: 70, Height: 70); Visible: false;
+          $C.@SecondaryTextButton #ItemButton7 { Text: ""; Anchor: (Width: 70, Height: 70); }
+          ItemGrid #ItemIcon7 { Anchor: (Width: 48, Height: 48, Left: 11, Top: 11); SlotsPerRow: 1; RenderItemQualityBackground: false; AreItemsDraggable: false; InfoDisplay: None; Style: (SlotSize: 48, SlotSpacing: 0, SlotIconSize: 48); }
+        }
+        Label { Anchor: (Width: 10); }
+        Group #ItemCard8 { Anchor: (Width: 70, Height: 70); Visible: false;
+          $C.@SecondaryTextButton #ItemButton8 { Text: ""; Anchor: (Width: 70, Height: 70); }
+          ItemGrid #ItemIcon8 { Anchor: (Width: 48, Height: 48, Left: 11, Top: 11); SlotsPerRow: 1; RenderItemQualityBackground: false; AreItemsDraggable: false; InfoDisplay: None; Style: (SlotSize: 48, SlotSpacing: 0, SlotIconSize: 48); }
+        }
+      }
+    }
+  }
+}
+
+$C.@BackButton {}

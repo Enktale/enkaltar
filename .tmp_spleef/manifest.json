@@ -1,0 +1,22 @@
+{
+    "Group": "socratiemes",
+    "Name": "Spleef",
+    "Version": "1.0.0",
+    "Description": "A simple Spleef plugin for Hytale",
+    "Authors": [
+        {
+            "Name": "Socratiemes"
+        }
+    ],
+    "Website": "example.org",
+    "ServerVersion": "*",
+    "Dependencies": {
+        
+    },
+    "OptionalDependencies": {
+        
+    },
+    "DisabledByDefault": false,
+    "Main": "org.socratiemes.spleef.SpleefPlugin",
+    "IncludesAssetPack": true
+}

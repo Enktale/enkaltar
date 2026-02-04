@@ -1,0 +1,252 @@
+$C = "../Common.ui";
+
+$C.@PageOverlay {}
+
+$C.@Container {
+  Anchor: (Width: 760, Height: 640);
+
+  #Content {
+    LayoutMode: Top;
+    Padding: (Full: 18);
+
+    Label #TitleText {
+      Style: (
+        FontSize: 18,
+        RenderBold: true,
+        TextColor: #ffffff,
+        HorizontalAlignment: Center
+      );
+      Anchor: (Height: 28);
+      Padding: (Bottom: 8);
+    }
+
+    Label #HelpText {
+      Style: (
+        FontSize: 12,
+        TextColor: #bfcdd5
+      );
+      Padding: (Bottom: 12);
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 28);
+      Padding: (Bottom: 10);
+
+      Label #HeldItemLabel {
+        Anchor: (Width: 180);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      Label #HeldItemValue {
+        FlexWeight: 1;
+        Style: (FontSize: 12, TextColor: #bfcdd5);
+        Anchor: (Left: 10);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 8);
+
+      Label #PriceLabel {
+        Anchor: (Width: 180);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #PriceInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 12);
+
+      Label #QtyLabel {
+        Anchor: (Width: 180);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #QtyInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    $C.@SecondaryTextButton #SaveItemButton {
+      Text: "";
+      Anchor: (Height: 36);
+      Padding: (Bottom: 12);
+    }
+
+    Label #ItemsHeader {
+      Style: (
+        FontSize: 14,
+        RenderBold: true,
+        TextColor: #bfcdd5
+      );
+      Anchor: (Height: 22);
+      Padding: (Bottom: 6);
+    }
+
+    Group {
+      LayoutMode: Top;
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        $C.@SecondaryTextButton #ItemButton0 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+        Label { Anchor: (Width: 10); }
+        $C.@SecondaryTextButton #ItemButton1 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+        Label { Anchor: (Width: 10); }
+        $C.@SecondaryTextButton #ItemButton2 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        $C.@SecondaryTextButton #ItemButton3 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+        Label { Anchor: (Width: 10); }
+        $C.@SecondaryTextButton #ItemButton4 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+        Label { Anchor: (Width: 10); }
+        $C.@SecondaryTextButton #ItemButton5 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 12);
+
+        $C.@SecondaryTextButton #ItemButton6 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+        Label { Anchor: (Width: 10); }
+        $C.@SecondaryTextButton #ItemButton7 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+        Label { Anchor: (Width: 10); }
+        $C.@SecondaryTextButton #ItemButton8 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+      }
+    }
+
+    Label #CommandsHeader {
+      Style: (
+        FontSize: 14,
+        RenderBold: true,
+        TextColor: #bfcdd5
+      );
+      Anchor: (Height: 22);
+      Padding: (Top: 6, Bottom: 6);
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 8);
+
+      Label #CommandNameLabel {
+        Anchor: (Width: 180);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #CommandNameInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 8);
+
+      Label #CommandDescriptionLabel {
+        Anchor: (Width: 180);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #CommandDescriptionInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 8);
+
+      Label #CommandLabel {
+        Anchor: (Width: 180);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #CommandInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 12);
+
+      Label #CommandPriceLabel {
+        Anchor: (Width: 180);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #CommandPriceInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    $C.@SecondaryTextButton #SaveCommandButton {
+      Text: "";
+      Anchor: (Height: 36);
+      Padding: (Bottom: 12);
+    }
+
+    Group {
+      LayoutMode: Top;
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        $C.@SecondaryTextButton #CommandButton0 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+        Label { Anchor: (Width: 10); }
+        $C.@SecondaryTextButton #CommandButton1 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+        Label { Anchor: (Width: 10); }
+        $C.@SecondaryTextButton #CommandButton2 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        $C.@SecondaryTextButton #CommandButton3 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+        Label { Anchor: (Width: 10); }
+        $C.@SecondaryTextButton #CommandButton4 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+        Label { Anchor: (Width: 10); }
+        $C.@SecondaryTextButton #CommandButton5 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        $C.@SecondaryTextButton #CommandButton6 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+        Label { Anchor: (Width: 10); }
+        $C.@SecondaryTextButton #CommandButton7 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+        Label { Anchor: (Width: 10); }
+        $C.@SecondaryTextButton #CommandButton8 { Text: ""; Anchor: (Width: 220, Height: 30); Visible: false; }
+      }
+    }
+  }
+}
+
+$C.@BackButton {}

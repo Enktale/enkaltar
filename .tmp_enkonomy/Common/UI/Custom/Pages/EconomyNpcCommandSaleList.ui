@@ -1,0 +1,118 @@
+$C = "../Common.ui";
+
+$C.@PageOverlay {}
+
+$C.@Container {
+  Anchor: (Width: 620, Height: 360);
+
+  #Content {
+    LayoutMode: Top;
+    Padding: (Full: 18);
+
+    Label #TitleText {
+      Style: (
+        FontSize: 18,
+        RenderBold: true,
+        TextColor: #ffffff,
+        HorizontalAlignment: Center
+      );
+      Anchor: (Height: 28);
+      Padding: (Bottom: 8);
+    }
+
+    Label #HelpText {
+      Style: (
+        FontSize: 12,
+        TextColor: #bfcdd5
+      );
+      Padding: (Bottom: 10);
+    }
+
+    Group {
+      LayoutMode: Top;
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        Group { FlexWeight: 1; }
+        $C.@SecondaryTextButton #CommandButton0 { Text: ""; Anchor: (Width: 260, Height: 32); Visible: false; }
+        Group { FlexWeight: 1; }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        Group { FlexWeight: 1; }
+        $C.@SecondaryTextButton #CommandButton1 { Text: ""; Anchor: (Width: 260, Height: 32); Visible: false; }
+        Group { FlexWeight: 1; }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        Group { FlexWeight: 1; }
+        $C.@SecondaryTextButton #CommandButton2 { Text: ""; Anchor: (Width: 260, Height: 32); Visible: false; }
+        Group { FlexWeight: 1; }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        Group { FlexWeight: 1; }
+        $C.@SecondaryTextButton #CommandButton3 { Text: ""; Anchor: (Width: 260, Height: 32); Visible: false; }
+        Group { FlexWeight: 1; }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        Group { FlexWeight: 1; }
+        $C.@SecondaryTextButton #CommandButton4 { Text: ""; Anchor: (Width: 260, Height: 32); Visible: false; }
+        Group { FlexWeight: 1; }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        Group { FlexWeight: 1; }
+        $C.@SecondaryTextButton #CommandButton5 { Text: ""; Anchor: (Width: 260, Height: 32); Visible: false; }
+        Group { FlexWeight: 1; }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        Group { FlexWeight: 1; }
+        $C.@SecondaryTextButton #CommandButton6 { Text: ""; Anchor: (Width: 260, Height: 32); Visible: false; }
+        Group { FlexWeight: 1; }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        Group { FlexWeight: 1; }
+        $C.@SecondaryTextButton #CommandButton7 { Text: ""; Anchor: (Width: 260, Height: 32); Visible: false; }
+        Group { FlexWeight: 1; }
+      }
+
+      Group {
+        LayoutMode: Left;
+        Padding: (Bottom: 6);
+
+        Group { FlexWeight: 1; }
+        $C.@SecondaryTextButton #CommandButton8 { Text: ""; Anchor: (Width: 260, Height: 32); Visible: false; }
+        Group { FlexWeight: 1; }
+      }
+    }
+  }
+}
+
+$C.@BackButton {}

@@ -1,0 +1,10 @@
+{
+  "Interactions": [
+    "EnkAltar_Use"
+  ],
+  "Settings": {
+    "Creative": {
+      "AllowSkipChainOnClick": true
+    }
+  }
+}

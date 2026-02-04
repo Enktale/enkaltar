@@ -1,0 +1,104 @@
+$C = "../Common.ui";
+
+$C.@PageOverlay {}
+
+$C.@Container {
+  Anchor: (Width: 520, Height: 320);
+
+  #Content {
+    LayoutMode: Top;
+    Padding: (Full: 18);
+
+    $C.@SecondaryTextButton #BackButtonTop {
+      Text: "";
+      Anchor: (Width: 80, Height: 26);
+      Padding: (Bottom: 6);
+    }
+
+    Label #TitleText {
+      Style: (
+        FontSize: 18,
+        RenderBold: true,
+        TextColor: #ffffff,
+        HorizontalAlignment: Center
+      );
+      Anchor: (Height: 28);
+      Padding: (Bottom: 8);
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 8);
+
+      Label #NameLabel {
+        Anchor: (Width: 160);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #NameInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 8);
+
+      Label #DescriptionLabel {
+        Anchor: (Width: 160);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #DescriptionInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 8);
+
+      Label #CommandLabel {
+        Anchor: (Width: 160);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #CommandInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 12);
+
+      Label #PriceLabel {
+        Anchor: (Width: 160);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #PriceInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 32);
+
+      $C.@SecondaryTextButton #SaveButton { Text: ""; Anchor: (Width: 200, Height: 30); }
+      Label { FlexWeight: 1; }
+      $C.@CancelTextButton #RemoveButton { Text: ""; Anchor: (Width: 200, Height: 30); }
+    }
+  }
+}
+
+$C.@BackButton {}

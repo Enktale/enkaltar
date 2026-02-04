@@ -1,0 +1,41 @@
+{
+  "TranslationProperties": {
+    "Name": "Spleef Block"
+  },
+  "Icon": "Icons/ItemsGenerated/Soil_Snow.png",
+  "Categories": [
+    "Blocks.Soils"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Spleef_Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Snow",
+    "HitboxType": "Full",
+    "Flags": {},
+    "Gathering": {
+      "Soft": {
+        "DropList": "Empty"
+      },
+      "UseDefaultDropWhenPlaced": false
+    },
+    "BlockParticleSetId": "Snow",
+    "Textures": [
+      {
+        "All": "BlockTextures/Soil_Snow.png",
+        "Weight": 1
+      }
+    ],
+    "BlockSoundSetId": "Snow",
+    "CubeShadingMode": "Standard",
+    "ParticleColor": "#ddf0f4"
+  },
+  "Tags": {
+    "Type": [
+      "Soil"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Soft",
+  "ItemLevel": 1
+}

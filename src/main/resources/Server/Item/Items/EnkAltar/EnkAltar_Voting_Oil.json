@@ -1,0 +1,22 @@
+{
+  "TranslationProperties": {
+    "Name": "Voting Oil"
+  },
+  "Icon": "Icons/ItemsGenerated/Furniture_Royal_Magic_Potion_Glow.png",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -1,
+      -23
+    ]
+  },
+  "Categories": [
+    "Furniture.Lighting"
+  ],
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

@@ -1,0 +1,9 @@
+{
+  "Group": "Enk",
+  "Name": "Enkonomy",
+  "Version": "1.0.0",
+  "Description": "Economy plugin",
+  "Main": "com.socratiemes.Enkonomy",
+  "ServerVersion": "*",
+  "IncludesAssetPack": true
+}

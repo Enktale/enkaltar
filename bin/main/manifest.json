@@ -1,0 +1,9 @@
+{
+  "Group": "socratiemes",
+  "Name": "EnkAltar",
+  "Version": "1.0.0",
+  "Description": "Vote altar rewards plugin",
+  "Main": "com.socratiemes.enkaltar.EnkAltarPlugin",
+  "ServerVersion": "*",
+  "IncludesAssetPack": true
+}

@@ -1,0 +1,118 @@
+$C = "../Common.ui";
+
+$C.@PageOverlay {}
+
+$C.@Container {
+  Anchor: (Width: 720, Height: 520);
+
+  #Content {
+    LayoutMode: Top;
+    Padding: (Full: 18);
+
+    Label #TitleText {
+      Style: (
+        FontSize: 18,
+        RenderBold: true,
+        TextColor: #ffffff,
+        HorizontalAlignment: Center
+      );
+      Anchor: (Height: 28);
+      Padding: (Bottom: 10);
+    }
+
+    Label #HelpText {
+      Style: (
+        FontSize: 12,
+        TextColor: #bfcdd5
+      );
+      Padding: (Bottom: 12);
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 8);
+
+      Label #PriceLabel {
+        Anchor: (Width: 180);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #PriceInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 8);
+
+      Label #ItemIdLabel {
+        Anchor: (Width: 180);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #ItemIdInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 8);
+
+      Label #ItemQtyLabel {
+        Anchor: (Width: 180);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #ItemQtyInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 8);
+
+      Label #CommandLabel {
+        Anchor: (Width: 180);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #CommandInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    Group {
+      LayoutMode: Left;
+      Anchor: (Height: 34);
+      Padding: (Bottom: 12);
+
+      Label #DisplayItemLabel {
+        Anchor: (Width: 180);
+        Style: (FontSize: 12, TextColor: #ffffff);
+      }
+
+      $C.@TextField #DisplayItemInput {
+        FlexWeight: 1;
+        Anchor: (Left: 10, Height: 28);
+      }
+    }
+
+    $C.@SecondaryTextButton #SaveButton {
+      Text: "";
+      Anchor: (Height: 36);
+    }
+  }
+}
+
+$C.@BackButton {}
